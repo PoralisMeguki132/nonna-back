@@ -2,14 +2,14 @@ package br.com.nonna.back.controller;
 
 import br.com.nonna.back.models.Produto;
 import br.com.nonna.back.services.ProdutoService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class ProdutoController {
     private final ProdutoService service;
 
